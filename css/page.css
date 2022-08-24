@@ -11,3 +11,8 @@
 .galery li:not(:last-of-type) {
     margin-bottom: 1rem;
 }
+
+.parallax-window {
+    height: 1100px;
+    margin-bottom: 20px;
+}
