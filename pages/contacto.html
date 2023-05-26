@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="icon" href="/img/globe.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+        integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
+        integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-expand-md navbar-dark" style="background-color: #183359">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><i class="bi bi-house"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aplicaciones Web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="website.html">Creacion de Sitios Web</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="fotografia.html">Fotografia Comercial</a>
+                            </li>
+                            <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="text-center display-1 title1 display768 mb-3">
+            Contacto
+        </h1>
+    </div>
+    <div class="container">
+        <div class="card border-info">
+            <img src="/img/logo-ORION-02.jpg" class="card-img" alt="logo">
+        </div>
+
+        <br />
+        <div class="shadow mb-3 rounded card border-info">
+            
+            <div class="card-body">
+                <h5 class="card-title">Contacto</h5>
+                <form action="https://formsubmit.co/2047b2222e5d79a870f0de49d6d84ccb" method="POST">
+                    <div class="row">
+                        <div class="col">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" name="name" class="form-control" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" name="last name" class="form-control" placeholder="Apellido" aria-label="Last name">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPhone" class="form-label">Telefono</label>
+                        <input type="tel" name="phone" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="FormControlTextarea" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="textarea" id="FormControlTextarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input type="hidden" name="_next" value="http://www.oriontechnologiesgt.com/thanks.html">
+                </form>
+            </div>
+        </div>
+        <br />
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    function getIp(callback) {
+    fetch('https://ipinfo.io/181.209.150.75?token=19a041889f8632', { headers: { 'Accept': 'application/json' }})
+        .then((resp) => resp.json())
+        .catch(() => {
+        return {
+        country: 'us',
+        };
+        })
+        .then((resp) => callback(resp.country));
+        }
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        preferredCountries: ["gt","cr","sv","hn","ni","pa","mx"],
+    initialCountry: "auto",
+    geoIpLookup: getIp,
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+    });
+</script>
+</html>
