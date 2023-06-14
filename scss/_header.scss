@@ -1,0 +1,58 @@
+nav {
+    background-color: #183359;
+
+    .navbar {}
+
+    .navbar-expand-xl {}
+
+    .navbar-expand-md {}
+
+    .navbar-dark {}
+
+    .container-fluid {
+        a {
+            .navbar-brand {
+                i {
+                    .bi bi-house {}
+                }
+            }
+        }
+    }
+
+    button {
+        .navbar-toggler {}
+
+        span {
+            .navbar-toggler-icon {}
+        }
+    }
+
+    .collapse {}
+
+    .navbar-collapse {}
+
+    #navbarNavDropdown {}
+
+    ul {
+        .navbar-nav {
+            li {
+                .nav-item {
+                    a {
+                        .nav-link {}
+                    }
+                }
+
+                ul {
+                    .dropdown-menu {
+                        li {
+                            a {
+                                .dropdown-item {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+@mixin img__hero {
+    width:1200px;
+    height:628px;
+}
+
+@mixin img__animation {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@mixin img__transition {
+    width: 100%;
+        transition: 0.5s all ease-in-out;
+}
