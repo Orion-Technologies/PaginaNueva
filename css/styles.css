@@ -1,6 +1,10 @@
 nav {
   background-color: #183359;
 }
+.vh__container-nosotros {
+  min-height: 60vh;
+}
+
 .title1 {
   color: #183359;
 }
@@ -30,6 +34,41 @@ section img {
 
 .animation__img:hover img {
   transform: scale(1.1);
+}
+
+.width__card {
+  width: 20rem;
+}
+
+.btn-outline-info {
+  border-color: #183359;
+  color: #183359;
+}
+
+.btn-outline-info:hover {
+  background-color: rgb(26, 141, 223);
+  color: #fff;
+}
+
+.btn-success {
+  border-radius: 15px;
+}
+
+.separacion__content {
+  margin-top: 18px;
+}
+
+.icon__margin {
+  margin-right: 22px;
+}
+
+.whatsapp {
+  text-decoration: none;
+  color: #075e54;
+}
+
+.tel__style {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

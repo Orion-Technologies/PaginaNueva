@@ -12,3 +12,34 @@
     width: 100%;
         transition: 0.5s all ease-in-out;
 }
+
+@mixin color__outline-info {
+    border-color: #183359;
+    color: #183359;
+}
+
+@mixin hover__outline-info {
+    background-color: rgb(26, 141, 223);
+    color: #fff;
+}
+
+@mixin border__button-whatsapp {
+    border-radius: 15px;
+}
+
+@mixin margin__content {
+    margin-top: 18px;
+}
+
+@mixin icons__margin {
+    margin-right: 22px;
+}
+
+@mixin whatsapp__link {
+    text-decoration: none;
+    color: #075e54;
+}
+
+@mixin tel__style {
+    text-decoration: none;
+}

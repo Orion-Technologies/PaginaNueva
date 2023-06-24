@@ -1,6 +1,10 @@
 @import "header";
 @import "mixins";
 
+.vh__container-nosotros {
+    min-height: 60vh;
+}
+
 .title1 {
     color: #183359;
 }
@@ -34,4 +38,36 @@ section {
 
 .animation__img:hover img {
     transform: scale(1.1);
+}
+
+.width__card {
+    width: 20rem;
+}
+
+.btn-outline-info {
+    @include color__outline-info();
+    }
+
+.btn-outline-info:hover {
+    @include hover__outline-info();
+}
+
+.btn-success {
+   @include border__button-whatsapp();
+}
+
+.separacion__content {
+    @include margin__content();
+}
+
+.icon__margin {
+    @include icons__margin();
+}
+
+.whatsapp {
+    @include whatsapp__link();
+}
+
+.tel__style {
+    @include tel__style();
 }
